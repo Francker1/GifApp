@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 interface IMyProps {
     props?: any,
     id: string,
     title: string,
-    url?: string,
+    url: string,
     className: string
 }
 
@@ -19,3 +20,10 @@ export const GifGridItem:React.FC<IMyProps> = ({ id, title, url }) => {
     )
 }
 
+
+GifGridItem.propTypes = {
+
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+}

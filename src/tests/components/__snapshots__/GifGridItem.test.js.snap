@@ -4,10 +4,16 @@ exports[`Tests in <GifGridItems /> should render the component correctly 1`] = `
 <div
   className="card animate__animated animate__zoomIn"
 >
-  <img />
-  <p />
+  <img
+    alt="Un título"
+    src="https://localhost/algo.jpg"
+  />
+  <p>
+    Un título
+  </p>
   <p>
     ID: 
+    789ERER99FC
   </p>
 </div>
 `;
