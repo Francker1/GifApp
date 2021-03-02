@@ -15,7 +15,7 @@ export const AddCategory:React.FC<IMyProps> = ( { setCategories }) => {
 
     const handleInputChange = (e:any) => {
 
-        setInputValue(e.target.value)
+        setInputValue(e.target.value);
     }
 
     const handleSubmit = (e:FormElement) => {
@@ -34,6 +34,7 @@ export const AddCategory:React.FC<IMyProps> = ( { setCategories }) => {
 
     return (
         <form onSubmit={ handleSubmit }>
+            <p>{inputValue}</p>
             <input 
                 type="text"
                 value={inputValue}

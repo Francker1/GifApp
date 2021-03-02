@@ -1,5 +1,5 @@
 
-export const getGifs = async( category:any ) => {
+export const getGifs = async( category:string ) => {
 
         const url = `https://api.giphy.com/v1/gifs/search?q=${ encodeURI( category ) }&limit=10&api_key=SUzkNCECXqOb0ru8RNS8i5N5B5TjFTh9`; 
 
