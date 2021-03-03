@@ -3,6 +3,7 @@ import React from 'react'
 import { useFetchGifs } from '../hooks/useFetchGifs'
 // import { getGifs } from '../helpers/getGifs';
 import { GifGridItem } from './GifGridItem';
+import PropTypes from 'prop-types';
 
 interface IMyProps {
     category:string,
@@ -37,4 +38,9 @@ export const GifGrid:React.FC<IMyProps> = ( {category} ) => {
             </div>
         </>
     )
+}
+
+GifGrid.propTypes = {
+
+    category: PropTypes.string.isRequired,
 }
