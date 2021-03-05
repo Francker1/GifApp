@@ -23,6 +23,17 @@ export const GifExpertApp = ({ defaultCategories = [] }) => {
                     )) 
                 }
             </ol>
+            <div>
+                <p>Encuentra aquí tus Gifs y pasa un buen rato.</p>
+                <ul>
+                    Próximamente:
+                    <li>Estilos</li>
+                    <li>Paginación</li>
+                    <li>Mejora del UI</li>
+                    <li>Posibilidad de opciones para insertar GIF</li>
+                    <li>Y más...</li>
+                </ul>    
+            </div>
             <Footer />
         </>
     );

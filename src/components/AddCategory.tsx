@@ -39,6 +39,7 @@ export const AddCategory:React.FC<IMyProps> = ( { setCategories }) => {
                 type="text"
                 value={inputValue}
                 onChange={ handleInputChange }
+                placeholder="Buscar..."
             />
         </form>
     )
